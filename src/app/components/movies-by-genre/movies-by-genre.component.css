@@ -1,0 +1,14 @@
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin: 10px 20px;
+}
+.movie {
+  display: flex;
+  grid-column-gap: 20px;
+}
+.overview {
+  font-size: small;
+}

@@ -1,0 +1,50 @@
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #61626b;
+}
+h4:hover {
+  transition: 0.3s;
+  color: snow;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  align-items: center;
+}
+.movieCard:hover {
+  transition: 0.3s;
+  border: 3px solid snow;
+  box-sizing: border-box;
+  background-color: rgba(97, 98, 107, 0.35);
+}
+
+
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+.rating-list li {
+  font-size: 15px;
+  float: right;
+  color: #ddd;
+}
+.rating-list li:hover {
+  color: #ffd700;
+}
+.rating-list li:hover ~ li {
+  color: #ffd700;
+}
+.rating-list li.selected {
+  color: #ffd700;
+}

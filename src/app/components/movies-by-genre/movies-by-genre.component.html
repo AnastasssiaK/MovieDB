@@ -1,0 +1,18 @@
+<div class="movies">
+  <div *ngFor="let movie of movies" class="movie">
+    <div>
+      <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" width="200px" alt="poster">
+    </div>
+    <div class="info">
+      <h4>
+        {{movie.original_title}}
+      </h4>
+      <div>
+        <p>Rating: {{movie.vote_average}}</p>
+        <p><app-star [vote]="movie.vote_average"></app-star></p>
+        <p class="overview">{{movie.overview}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
