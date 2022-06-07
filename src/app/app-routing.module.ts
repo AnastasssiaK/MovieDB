@@ -8,6 +8,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {GenresComponent} from "./components/genres/genres.component";
 import {MoviesByGenreComponent} from "./components/movies-by-genre/movies-by-genre.component";
 import {MovieDetailsComponent} from "./components/movie-details/movie-details.component";
+import {SearchComponent} from "./components/search/search.component";
 
 const routes: Routes = [
   {
@@ -16,8 +17,9 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'movies', component: MoviesComponent},
       {path: 'movie/:id', component: MovieDetailsComponent},
+      {path: 'search/movie', component: SearchComponent},
       {path: 'genres', component: GenresComponent},
-      {path: 'moviesByGenre/:id', component: MoviesByGenreComponent}
+      {path: 'moviesByGenre/:id', component: MoviesByGenreComponent},
     ]
   }
 ]

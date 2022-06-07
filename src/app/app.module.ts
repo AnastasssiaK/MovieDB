@@ -17,6 +17,8 @@ import { SingleGenreComponent } from './components/single-genre/single-genre.com
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviesByGenreComponent } from './components/movies-by-genre/movies-by-genre.component';
 import { StarComponent } from './components/star/star.component';
+import { ThemeSwitcherComponent } from './Components/theme-switcher/theme-switcher.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { StarComponent } from './components/star/star.component';
     MovieDetailsComponent,
     MoviesByGenreComponent,
     StarComponent,
+    ThemeSwitcherComponent,
+    SearchComponent,
 
   ],
   imports: [

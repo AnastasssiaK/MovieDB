@@ -18,6 +18,10 @@ export class MovieService {
     return this.httpClient.get<IMovies>(urls.movies, {params: {page}})
   }
 
+  getMovieBySearch(query: string): Observable<IMovies> {
+    return this.httpClient.get<IMovies>(urls.search, {params: {query}})
+  }
+
   getById(id: number): Observable<ISingleMovie> {
     return this.httpClient.get<ISingleMovie>(`${urls.movie}/${id}`)
   }

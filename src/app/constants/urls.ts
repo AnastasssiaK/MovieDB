@@ -6,5 +6,5 @@ export const urls = {
   movie: `${API}/movie`,
   movies: `${API}/discover/movie`,
   genres: `${API}/genre/movie/list`,
-
+  search: `${API}/search/movie`
 }

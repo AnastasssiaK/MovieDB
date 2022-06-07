@@ -1,9 +1,9 @@
-<div class="search">
-  <input type="text" name="movieTitle" placeholder="Search" [(ngModel)]="movieTitle" (ngModelChange)="Search()">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png"
-    alt="search" (click)="Search()">
-</div>
+<!--<div class="search">-->
+<!--  <input type="text" name="movieTitle" placeholder="Search" [(ngModel)]="movieTitle" (ngModelChange)="Search()">-->
+<!--  <img-->
+<!--    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png"-->
+<!--    alt="search" (click)="Search()">-->
+<!--</div>-->
 <div class="movies">
   <!--<app-single-movie *ngFor="let movie of movies | paginate: { itemsPerPage: 10, currentPage: page }" [singleMovie]="movie"></app-single-movie>-->
   <app-single-movie *ngFor="let movie of movies" [singleMovie]="movie"></app-single-movie>

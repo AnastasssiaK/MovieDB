@@ -6,24 +6,6 @@
   margin: 0 2%;
 }
 
-.search {
-  display: flex;
-  column-gap: 20px;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 10px 120px;
-}
-.search img {
-  width: 20px;
-  height: 20px;
-}
-input {
-  background: transparent;
-  border-radius: 20px;
-  padding: 7px;
-  border: 2px solid #61626b;
-  color: snow;
-}
 button {
   cursor: pointer;
 }

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {IMovie, IMovies} from "../../interfaces";
 import {MovieService} from "../../services";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -14,7 +14,7 @@ export class MoviesComponent implements OnInit {
   movies: IMovie[];
   movieTitle: any;
   page: number = 1;
-  itemsPerPage: number;
+  // itemsPerPage: number;
 
   constructor(private movieService: MovieService, private activatedRoute: ActivatedRoute, private router: Router) {
   }
@@ -29,15 +29,6 @@ export class MoviesComponent implements OnInit {
     })
   }
 
-  Search() {
-    if (this.movieTitle === "") {
-      this.ngOnInit()
-    } else {
-      this.movies = this.movies.filter(res => {
-        return res.title.toLowerCase().match(this.movieTitle.toLocaleLowerCase())
-      })
-    }
-  }
 
   prev() {
     if (this.movieList.page > 1) {
@@ -48,4 +39,14 @@ export class MoviesComponent implements OnInit {
   next() {
     this.router.navigate([''], {queryParams: { page: this.movieList.page + 1},  queryParamsHandling: 'merge'})
   }
+
+  // Search() {
+  //   if (this.movieTitle === "") {
+  //     this.ngOnInit()
+  //   } else {
+  //     this.movies = this.movies.filter(res => {
+  //       return res.title.toLowerCase().match(this.movieTitle.toLocaleLowerCase())
+  //     })
+  //   }
+  // }
 }

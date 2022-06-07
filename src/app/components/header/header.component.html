@@ -6,6 +6,14 @@
     <div routerLink="#" routerLinkActive="active">Home</div>
     <div routerLink="movies" routerLinkActive="active">All Movies</div>
     <div routerLink="genres" routerLinkActive="active">Genres</div>
+    <div class="search">
+      <form [formGroup]="form">
+        <input type="search" name="movieTitle" placeholder="Search" formControlName="search" >
+      </form>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png"
+        alt="search" (click)="search()">
+    </div>
     <div routerLink="#" routerLinkActive="active" class="register">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/1200px-Breezeicons-actions-22-im-user.svg.png"

@@ -1,0 +1,16 @@
+
+<div class="movies">
+  <div *ngFor="let movie of movies" class="movieCard">
+      <a  routerLink="/movie/{{movie.id}}" >
+        <div>
+          <img src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" width="250px" alt="poster">
+        </div>
+        <h4>
+          {{movie.original_title}}
+        </h4>
+        <div class="info">
+          <p>Rating: {{movie.vote_average}}</p>
+        </div>
+      </a>
+  </div>
+</div>
