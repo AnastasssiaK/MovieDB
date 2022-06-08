@@ -1,5 +1,13 @@
-<div>
+<div class="mainLayout">
   <app-header></app-header>
+  <div class="light-dark-side-placeholder">
+    <mat-slide-toggle
+      #lightDarkToggle
+      class="toggle-light-dark-theme"
+      (click)="doToggleLightDark(lightDarkToggle)">
+      <mat-icon>{{lightDarkToggleIcon}}</mat-icon>
+    </mat-slide-toggle>
+  </div>
   <div class="container">
     <router-outlet></router-outlet>
   </div>

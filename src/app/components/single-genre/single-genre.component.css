@@ -5,7 +5,7 @@
 }
 .genre:hover {
   transition: 0.3s;
-  border: 1px solid white;
+  border: 1px solid deeppink;
   padding: 10px;
 }
 a {
@@ -13,6 +13,6 @@ a {
   color: #61626b;
 }
 a:hover {
-  color: snow;
+  color: deeppink;
 }
 

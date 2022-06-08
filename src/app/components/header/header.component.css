@@ -14,7 +14,7 @@
 .logo img {
   height: 50px;
 }
-.active {
+.dark-theme .active {
   color: snow;
 }
 
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
 }
-.header_menu div:hover {
+.dark-theme .header_menu div:hover {
   transition: 0.3s;
   color: snow;
 }
@@ -51,5 +51,19 @@ input {
   border-radius: 20px;
   padding: 7px;
   border: 2px solid #61626b;
+}
+.dark-theme input {
   color: snow;
+}
+
+
+.light-theme .active {
+  color: deeppink;
+}
+.light-theme .header_menu div:hover {
+  transition: 0.3s;
+  color: deeppink;
+}
+.light-theme input {
+  color: deeppink;
 }

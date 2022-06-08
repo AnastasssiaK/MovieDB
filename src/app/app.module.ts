@@ -3,6 +3,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from "ngx-pagination";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
@@ -17,8 +19,8 @@ import { SingleGenreComponent } from './components/single-genre/single-genre.com
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviesByGenreComponent } from './components/movies-by-genre/movies-by-genre.component';
 import { StarComponent } from './components/star/star.component';
-import { ThemeSwitcherComponent } from './Components/theme-switcher/theme-switcher.component';
 import { SearchComponent } from './components/search/search.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,6 @@ import { SearchComponent } from './components/search/search.component';
     MovieDetailsComponent,
     MoviesByGenreComponent,
     StarComponent,
-    ThemeSwitcherComponent,
     SearchComponent,
 
   ],
@@ -44,6 +45,9 @@ import { SearchComponent } from './components/search/search.component';
     ReactiveFormsModule,
     NgxPaginationModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule,
   ],
   providers: [
     {

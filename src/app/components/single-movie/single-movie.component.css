@@ -7,6 +7,9 @@
   position: relative;
   padding: 10px;
 }
+h4 {
+  color: deeppink;
+}
 a {
   cursor: pointer;
   text-decoration: none;
@@ -17,9 +20,10 @@ h4:hover {
   color: snow;
 }
 .info {
-  display: flex;
-  justify-content: space-between;
-  font-size: small;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*font-size: small;*/
+  text-align: left;
   align-items: center;
 }
 .movieCard:hover {
@@ -35,7 +39,7 @@ h4:hover {
   list-style: none;
 }
 .rating-list li {
-  font-size: 15px;
+  font-size: small;
   float: right;
   color: #ddd;
 }

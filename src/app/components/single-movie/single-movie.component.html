@@ -8,11 +8,9 @@
     </h4>
     <div class="info">
       <p>Rating: {{singleMovie.vote_average}}</p>
-      <div>
-      </div>
       <ul class="rating-list" style="padding-left: 0" *ngFor="let star of stars; let i= index">
         <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}" (mouseover)="addClass(star)"
-            (mouseout)="removeClass()"> <span class="material-icons">★</span>
+            (mouseout)="removeClass()"> <span class="material-icons">star</span>
         </li>
       </ul>
     </div>

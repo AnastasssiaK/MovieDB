@@ -18,14 +18,14 @@ button {
 .pagination button {
   margin: 20px 0;
   padding: 5px 10px;
-  border: 1px solid snow;
-  color: snow;
+  border: 1px solid deeppink;
+  color: deeppink;
   background: transparent;
   border-radius: 20px;
   width: 100px;
 }
 .pagination button:hover {
   transition: 0.3s;
-  background: snow;
-  color: #61626b;
+  background: deeppink;
+  color: snow;
 }

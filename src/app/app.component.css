@@ -1,3 +1,8 @@
+div {
+  background: #191b1f;
+  color: #61626b;
+  margin: 0;
+}
 .dark-theme {
   background: #191b1f;
   color: #61626b;;
@@ -6,9 +11,4 @@
 .light-theme {
   background: snow;
   color: #191b1f;
-}
-.light-dark-side-placeholder {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 100px 10px;
 }
